@@ -1,0 +1,96 @@
+/*
+* By     => Ibrahim-JS
+* FB     => Ibrahim AL-NASSER
+* Github => /ibrahim-js
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E2C275;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.panda__container {
+    position: relative;
+}
+
+.panda__face {
+    width: 320px;
+    height: 300px;
+    background: #FFF;
+    border-radius: 50% 50% 40% 40%;
+    position: relative;
+}
+
+.ear {
+    width: 150px;
+    height: 150px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: -1rem;
+}
+
+.right__ear {
+    right: -1rem;
+}
+
+.left__ear {
+    left: -1rem;
+}
+
+.eye {
+    height: 140px;
+    width: 120px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 5rem;
+}
+
+.left__eye {
+    left: 1.5rem;
+    transform: rotate(25deg);
+}
+
+.right__eye {
+    right: 1.5rem;
+    transform: rotate(-25deg);
+}
+
+.eye::after {
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #FFF;
+    position: absolute;
+}
+
+.right__eye::after {
+    top: 1.5rem;
+    left: 2rem;
+}
+
+.left__eye::after {
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.nose {
+    width: max-content;
+    border: 20px solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
